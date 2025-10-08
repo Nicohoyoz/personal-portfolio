@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>N. Hoyos — Portfolio</title>
+    <meta name="description" content="N. Hoyos — CS/IT Student | Aspiring Cybersecurity Engineer | Full-Stack Builder.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+    <meta name="theme-color" content="#0a84ff">
+    <meta property="og:title" content="N. Hoyos — Portfolio">
+    <meta property="og:description" content="CS/IT Student | Aspiring Cybersecurity Engineer | Full-Stack Builder.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/assets/og-image.svg">
+    <meta property="og:url" content="https://">
+</head>
+<body>
+    <header class="site-header glass" id="top">
+        <div class="container nav">
+            <a class="brand" href="#top">N. Hoyos</a>
+            <nav class="nav-links" aria-label="Primary">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#experience">Experience</a>
+                <a href="#contact">Contact</a>
+                <button id="themeToggle" class="btn icon" aria-label="Toggle theme">🌙</button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" aria-label="Hero">
+            <div class="container hero-inner reveal">
+                <h1 class="title">N. Hoyos</h1>
+                <p class="subtitle">CS/IT Student | Aspiring Cybersecurity Engineer | Full-Stack Builder</p>
+                <div class="actions">
+                    <a class="btn primary" href="assets/Nicolas_Hoyos_Resume.pdf" target="_blank" rel="noreferrer noopener">Resume (PDF)</a>
+                    <a class="btn" href="https://github.com/Nicohoyoz" target="_blank" rel="noreferrer noopener">GitHub</a>
+                    <a class="btn" href="https://www.linkedin.com/in/nicolas-hoyos-597a05207/" target="_blank" rel="noreferrer noopener">LinkedIn</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container reveal">
+                <h2>About Me</h2>
+                <p>I’m an IT student at Montclair State University (graduating 2026), passionate about cybersecurity, IT infrastructure, and building hands-on projects like a SOC homelab and web apps.</p>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="container reveal">
+                <h2>Projects</h2>
+                <div class="grid projects-grid">
+                    <article class="card tilt reveal">
+                        <h3>Smart Campus GPS Navigation (HCI)</h3>
+                        <p>Prototyped a campus navigation app focusing on user-centered design and usability testing.</p>
+                        <div class="tags"><span>HCI</span><span>Figma</span><span>UX Research</span></div>
+                    </article>
+                    <article class="card tilt reveal">
+                        <h3>Security Operations Center (SOC) Homelab</h3>
+                        <p>Virtualized SOC pipeline with Docker; used Wireshark and Nmap to simulate traffic analysis.</p>
+                        <div class="tags"><span>Docker</span><span>Wireshark</span><span>Nmap</span></div>
+                    </article>
+                    <article class="card tilt reveal">
+                        <h3>Personal Portfolio Website</h3>
+                        <p>Designed and deployed on Vercel Free Tier with CI/CD from GitHub; mobile-first for recruiters.</p>
+                        <div class="tags"><span>Vercel</span><span>CI/CD</span><span>HTML/CSS/JS</span></div>
+                    </article>
+                    <article class="card tilt reveal">
+                        <h3>Industry Project (Confidential NDA)</h3>
+                        <p>Confidential project under NDA. Highlighting skills/tools: Agile, GitHub, frontend, architecture.</p>
+                        <div class="tags"><span>Agile</span><span>GitHub</span><span>Frontend</span></div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="container reveal">
+                <h2>Skills</h2>
+                <ul class="skills marquee">
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>C</li>
+                    <li>SQL</li>
+                    <li>JavaScript</li>
+                    <li>Docker</li>
+                    <li>Git/GitHub</li>
+                    <li>React</li>
+                    <li>Wireshark</li>
+                    <li>Nmap</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="experience" class="section">
+            <div class="container reveal">
+                <h2>Experience & Certifications</h2>
+                <div class="timeline">
+                    <div class="item">
+                        <h3>Pharmacy Delivery Driver</h3>
+                        <p>Demonstrated time management, reliability, and responsibility in a fast-paced environment.</p>
+                    </div>
+                    <div class="item">
+                        <h3>Certifications</h3>
+                        <p>CompTIA Security+ (In Progress), AWS Cloud Practitioner (Planned)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container reveal">
+                <h2>Contact</h2>
+                <p>Email: <a href="mailto:n.hoyos.dev@gmail.com">n.hoyos.dev@gmail.com</a></p>
+                <div class="socials">
+                    <a href="https://github.com/Nicohoyoz" target="_blank" rel="noreferrer noopener">GitHub</a>
+                    <a href="https://www.linkedin.com/in/nicolas-hoyos-597a05207/" target="_blank" rel="noreferrer noopener">LinkedIn</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© <span id="year"></span> N. Hoyos</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
